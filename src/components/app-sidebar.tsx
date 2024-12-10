@@ -1,6 +1,6 @@
 'use client'
 
-import { AudioWaveform, Bot, Command, GalleryVerticalEnd, SquareTerminal } from 'lucide-react'
+import { Bot, SquareTerminal } from 'lucide-react'
 
 import { NavMain } from '@/components/nav-main'
 import { NavUser } from '@/components/nav-user'
@@ -14,23 +14,7 @@ const data = {
     email: 'm@example.com',
     avatar: '/avatars/shadcn.jpg'
   },
-  teams: [
-    {
-      name: 'Kia Long An',
-      logo: GalleryVerticalEnd,
-      plan: 'Huy'
-    },
-    {
-      name: 'Acme Corp.',
-      logo: AudioWaveform,
-      plan: 'Startup'
-    },
-    {
-      name: 'Evil Corp.',
-      logo: Command,
-      plan: 'Free'
-    }
-  ],
+
   navMain: [
     {
       title: 'Car',
@@ -40,11 +24,11 @@ const data = {
       items: [
         {
           title: 'All car',
-          url: '#'
+          url: '/all-car'
         },
         {
           title: 'Create car',
-          url: '#'
+          url: '/create-car'
         }
       ]
     },

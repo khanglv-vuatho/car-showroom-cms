@@ -4,8 +4,6 @@ import { SidebarInset } from '@/components/ui/sidebar'
 import { Header } from '@/layouts/header'
 import { AppSidebar } from '@/components/app-sidebar'
 
-import '@/app/globals.css'
-
 type RootLayoutProps = {
   children: React.ReactNode
 }
