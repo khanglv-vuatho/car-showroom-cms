@@ -1,7 +1,7 @@
 'use client'
+
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { SignedOut, SignedIn, SignInButton, UserButton } from '@clerk/nextjs'
 
 export function LoginForm() {
   const handleLoginWithGoogle = () => {
@@ -15,12 +15,6 @@ export function LoginForm() {
         <CardDescription className='text-center'>Enter your email below to login to your account</CardDescription>
       </CardHeader>
       <CardContent className='space-y-4'>
-        <SignedOut>
-          <SignInButton />
-        </SignedOut>
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
         <Button variant='outline' className='relative w-full' onClick={handleLoginWithGoogle}>
           <svg className='mr-2 h-4 w-4' aria-hidden='true' focusable='false' data-prefix='fab' data-icon='google' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 488 512'>
             <path

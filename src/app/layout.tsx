@@ -1,8 +1,4 @@
 import { ThemeProvider } from '@/components/theme-provider'
-import { SidebarProvider } from '@/components/ui/sidebar'
-import { SidebarInset } from '@/components/ui/sidebar'
-import { Header } from '@/layouts/header'
-import { AppSidebar } from '@/components/app-sidebar'
 
 import '@/app/globals.css'
 
@@ -17,13 +13,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head />
         <body>
           <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
-            <SidebarProvider>
-              <AppSidebar />
-              <SidebarInset>
-                <Header />
-                {children}
-              </SidebarInset>
-            </SidebarProvider>
+            {children}
           </ThemeProvider>
         </body>
       </html>
