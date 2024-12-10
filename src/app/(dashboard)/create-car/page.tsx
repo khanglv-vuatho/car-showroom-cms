@@ -1,7 +1,8 @@
+import { WrapperLayout } from '@/layouts/wrapperLayout'
 import React from 'react'
 
 const CreateCar = () => {
-  return <div>CreateCar</div>
+  return <WrapperLayout>CreateCar</WrapperLayout>
 }
 
 export default CreateCar

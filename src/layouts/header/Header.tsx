@@ -18,7 +18,7 @@ export const useBreadcrumbs = () => {
   }
   const breadcrumbs = pathSegments.map((segment, index) => {
     const url = '/' + pathSegments.slice(0, index + 1).join('/')
-    const title = segment.charAt(0).toUpperCase() + segment.slice(1)
+    const title = segment.charAt(0).toUpperCase() + segment.slice(1).split('-').join(' ')
     return { title, url }
   })
 

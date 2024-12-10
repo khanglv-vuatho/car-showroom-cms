@@ -1,7 +1,8 @@
+import { WrapperLayout } from '@/layouts/wrapperLayout'
 import React from 'react'
 
 const DashboardPage = () => {
-  return <div> DashboardPage</div>
+  return <WrapperLayout> DashboardPage</WrapperLayout>
 }
 
 export default DashboardPage
