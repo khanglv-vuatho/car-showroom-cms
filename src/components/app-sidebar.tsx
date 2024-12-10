@@ -14,17 +14,15 @@ const data = {
     email: 'm@example.com',
     avatar: '/avatars/shadcn.jpg'
   },
-
   navMain: [
     {
       title: 'Car',
       url: '#',
       icon: SquareTerminal,
-      isActive: true,
       items: [
         {
-          title: 'All car',
-          url: '/all-car'
+          title: 'All cars',
+          url: '/all-cars'
         },
         {
           title: 'Create car',
@@ -39,11 +37,11 @@ const data = {
       items: [
         {
           title: 'All blogs',
-          url: '#'
+          url: '/all-blogs'
         },
         {
           title: 'Create blog',
-          url: '#'
+          url: '/create-new-blog'
         }
       ]
     }
